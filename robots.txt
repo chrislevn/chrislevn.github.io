@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://chrislevn.github.io/chrislevn/sitemap.xml
+Sitemap: https://chrislevn.github.io/sitemap.xml
