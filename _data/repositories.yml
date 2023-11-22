@@ -1,12 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - chrislevn
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - GoogleCloudPlatform/deploystack-serverless-e2e-photo-sharing-app
+  - AugustanaCSC490Spring23/EasyArtShow
+  - FitBeatDepresso/Dashboard
+  - chrislevn/Deep-Learning-Journey
+  - chrislevn/dockerfile-practices
+  - chrislevn/MindYourNeck
+

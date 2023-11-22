@@ -94,6 +94,16 @@
               {%- endif -%}
               {%- endif -%}
               {% endfor -%}
+
+              <!-- Resume -->
+              <li class="nav-item">
+                <a  class="nav-link"  href="{{ page.cv_pdf | prepend: 'assets/pdf/christopher_resume_swe.pdf' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right">resume</a>
+              </li>
+
+              <!-- Vietnamese -->
+              <li class="nav-item">
+                <a  class="nav-link"  href="https://substack.com/profile/8097820-christopher-loc-le/posts" target="_blank" rel="noopener noreferrer" class="float-right">archive</a>
+              </li>
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->

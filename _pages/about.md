@@ -2,25 +2,35 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+# subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  # more_info: >
+  #   Current fav books: 
+  #   <p>System Design Interview 1&2</p>
+  #   <p>Design Intensive Data Application</p>
+  #   <p>Site Reliability Engineering: How Google Runs Production Systems</p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I was born in a small city called Tuy Hoa, Vietnam where I found interests in engineering from my dad's garage. 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I took 2 gap years to study Full-stack development and Machine Learning at [CoderSchool](https://www.coderschool.vn/en). During this time, I learned iOS development and found a project named [Mind Your Neck](https://thanhnien.vn/sinh-vien-sang-tao-ung-dung-ngua-benh-cho-gioi-van-phong-185792676.htm). The project stopped as I thought I still need to learn a lot to scale in production. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I started college at [Augustana College](https://www.augustana.edu/) where I earned Donald E. McLaughlin Award for Excellence and Achievement in Computer Science (top 1% of class). During this 4 years, I had a chance to intern at both startups [IMI.AI](https://imi.ai/), [CloudQuant](https://www.cloudquant.com/), and big tech such as [Google](https://www.google.com/about/careers/applications/?src=Online%2FHouse%20Ads%2FSKWS) - Cloud team. I also had experience in Machine Learning while working [Dr. Tauheed](https://sites.google.com/site/tauheedresearch). At the end of these 4 year, I am confident to create and scale a full-stack web app from sratch with data analytics. My current knowledge contains Full-stack Development, AI, Networking, and System Engineering. 
+
+While working in industry, I found many software optimization still relies on hardware configuration in which I have not studied at college. I am studying hardware while working with [CYOBot](https://www.kickstarter.com/projects/cyobot/cyocrawler-building-tomorrows-innovators) to bring robotics learning to everyone. My experience is very diversified but I am a quick learner and goal-oriented. I'm on my quest to find what my specialization is. 
+
+My goal is that one day to connect all of these dots needed for a strong system together. I hope to share my knowledge with others by my experience with DevRel. 
+
+I read a lot about philosophy, religion, and economics. I also taking photos at [Unsplash](https://unsplash.com/@chrislevn07)
+
+I’m best reached via [email](christopherle0711@gmail.com). I’m always open to interesting conversations and collaboration.
+
