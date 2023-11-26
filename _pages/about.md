@@ -34,3 +34,20 @@ I read a lot about philosophy, religion, and economics. I also taking photos at 
 
 I’m best reached via [email](christopherle0711@gmail.com). I’m always open to interesting conversations and collaboration.
 
+---
+
+## Awards: 
+- 2nd Place Developer Week Hackathon 2019.
+- 1st place in AngelHack + AWS Hackathon 2019.
+- 1st Place Midwest Region (MW) of the Consortium for Computing Sciences in Colleges (CCSC).
+
+Certifications: Tensorflow Developer (Google), Machine Learning System Design (Educative),
+Tableau and R, PowerBi, R for Excel users, SQL.
+<br/>
+Related course-works: Operating System, Machine Learning, Software Development, Data
+Structures and Algorithms, Cybersecurity and Networking, Database management.
+<br/>
+Extracurricular: Founder - Google Developer Student Club, Mentor - HackMIT, Software
+Engineer - ACES App, Grader - Augustana College’s SQL Class.
+
+---
