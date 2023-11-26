@@ -6,8 +6,7 @@ description:
 tags: languages python rust go 
 categories: backend
 giscus_comments: true
-
-featured: false
+featured: true
 related_posts: true
 ---
 
