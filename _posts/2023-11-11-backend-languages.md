@@ -19,17 +19,19 @@ When it comes to Backend Web Development – we primarily require a backend (or 
 Pick a language from the given list and make sure to learn its quirks, core details about its runtime e.g. concurrency, memory model, etc.
 
 ## Comparison of backend languages
-| Language   | Concurrency                                  | Runtime                          | Memory Model             | Use Cases                                            |
-|------------|----------------------------------------------|----------------------------------|--------------------------|------------------------------------------------------|
-| Python     | Multi-threading, asyncio                     | Interpreted, CPython, PyPy       | Dynamic, managed         | Web applications, Data analysis, AI/ML, Scripting    |
-| Rust       | Async, multi-threading, Actor model          | Compiled                         | Ownership, Borrowing     | System programming, WebAssembly, Embedded systems    |
-| Go         | Goroutines, channels                         | Compiled, Go runtime             | Garbage collected        | Network services, Concurrent processing             |
-| PHP        | Multi-threading (limited), async (libraries) | Interpreted, Zend Engine         | Dynamic, managed         | Web development, CMS, E-commerce platforms          |
-| JavaScript | Event loop, async/await                      | Interpreted, Node.js runtime     | Dynamic, managed         | Web development, Server-side applications           |
-| Java       | Threads, Future, CompletableFuture           | Compiled to bytecode, JVM        | Garbage collected        | Enterprise applications, Android apps, Web services |
-| C#         | Async/await, Task Parallel Library           | Compiled to bytecode, CLR        | Garbage collected        | Web applications, Desktop applications, Games       |
-| Ruby       | Threads, Fibers                              | Interpreted, YARV                | Dynamic, managed         | Web applications (Rails), Scripting, Prototyping    |
 
+| Language   | Concurrency                                  | Runtime                      | Memory Model         | Use Cases                                           |
+|------------|----------------------------------------------|------------------------------|----------------------|-----------------------------------------------------|
+| Python     | Multi-threading, asyncio                     | Interpreted, CPython, PyPy   | Dynamic, managed     | Web applications, Data analysis, AI/ML, Scripting   |
+| Rust       | Async, multi-threading, Actor model          | Compiled                     | Ownership, Borrowing | System programming, WebAssembly, Embedded systems   |
+| Go         | Goroutines, channels                         | Compiled, Go runtime         | Garbage collected    | Network services, Concurrent processing             |
+| PHP        | Multi-threading (limited), async (libraries) | Interpreted, Zend Engine     | Dynamic, managed     | Web development, CMS, E-commerce platforms          |
+| JavaScript | Event loop, async/await                      | Interpreted, Node.js runtime | Dynamic, managed     | Web development, Server-side applications           |
+| Java       | Threads, Future, CompletableFuture           | Compiled to bytecode, JVM    | Garbage collected    | Enterprise applications, Android apps, Web services |
+| C#         | Async/await, Task Parallel Library           | Compiled to bytecode, CLR    | Garbage collected    | Web applications, Desktop applications, Games       |
+| Ruby       | Threads, Fibers                              | Interpreted, YARV            | Dynamic, managed     | Web applications (Rails), Scripting, Prototyping    |
+
+<br/>
 Let's look at some of the criteria to considered:
 
 ### Concurrency:
@@ -69,7 +71,7 @@ Rust has a unique memory model focusing on safety without a garbage collector.
 | Ruby       | Cross-platform, web (Ruby on Rails)          | High (Dynamic typing)            | Fast                     | Lower (interpreted)                  | Dedicated, particularly around Rails          |
 
 
-
+<br/>
 #### Notes: 
 I didn't make comparison in terms of speed due to the fact that it's hard to compare languages. It's better to compare the speed of a specific task. Also, although it can be faster to run a specific task, would it be faster to develop considering the learning curve and current codebase?
 
@@ -78,9 +80,8 @@ It's also worth noting that:
 - programming languages are always updated and improved. For example, Python 3.10 is faster than Python 3.9 due to faster method calls and more efficient memory management. There are always pros and cons. Don't learn everything, just learn what you need for your use cases and master it. 
 
 ---
-> One note about Python and Mojo:
-
-### Overcome the limitations of Python
+One note about Python and Mojo. As I said, languages change over time. 
+Overcome the limitations of Python:
 Python is known for its slow speed. However, I just got to know about Mojo 
 > Mojo combines the usability of Python with the performance of C, unlocking unparalleled programmability of AI hardware and extensibility of AI models.
 
