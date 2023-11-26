@@ -2,7 +2,7 @@
 layout: post
 title: Basic Algorithms in JavaScript (part 1)
 date: 2020-03-07 09:56:00-0400
-description: Basic Algorithms in JavaScript (part 1)
+description:
 tags: algorithm
 categories: tech
 giscus_comments: true

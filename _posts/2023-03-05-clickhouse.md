@@ -2,7 +2,7 @@
 layout: post
 title: Visualize your data from cloud with DoubleCloud and ClickHouse DB
 date: 2023-03-05 09:56:00-0400
-description: Visualize your data from cloud with DoubleCloud and ClickHouse DB
+description: 
 tags: cloud demo
 categories: demo
 giscus_comments: true

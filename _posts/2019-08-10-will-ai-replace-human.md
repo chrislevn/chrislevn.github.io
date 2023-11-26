@@ -2,7 +2,7 @@
 layout: post
 title: Will AI replace human labor?
 date: 2019-08-10 09:56:00-0400
-description: Will AI replace human labor?
+description: 
 tags: personal tech
 categories: personal
 giscus_comments: true

@@ -2,18 +2,15 @@
 layout: post
 title: My takeaways of Git
 date: 2023-11-10 19:35:00-0400
-description: My takeaways of Git
-tags: backend git
+description: 
+tags: git
 categories: backend
 giscus_comments: true
 featured: true
-related_posts: false
-related_publications: true
+related_posts: true
 ---
 
-This is a continuation of my [previous post](https://christopherle.com/blog/2023/inside-browser/) on what happend when you type a URL into a browser. Following [this back-end basic roadmap](https://roadmap.sh/backend), I will be going over the basics of Git in today post. I won't be covering everything, just my takeaways of what I think is valuable. 
-
-# Git 
+> This is a continuation of my [previous post](https://christopherle.com/blog/2023/inside-browser/) on what happend when you type a URL into a browser. Following [this back-end basic roadmap](https://roadmap.sh/backend), I will be going over the basics of Git in today post. I won't be covering everything, just my takeaways of what I think is valuable. 
 
 ## 1. What is Git?
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.

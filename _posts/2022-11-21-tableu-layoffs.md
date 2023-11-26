@@ -2,7 +2,7 @@
 layout: post
 title: Analysis of Current Layoffs in the USA with Tableau
 date: 2022-11-21 10:56:00-0400
-description: Analysis of Current Layoffs in the USA with Tableau
+description: 
 tags: tableau analytics
 categories: AI
 giscus_comments: true

@@ -2,7 +2,7 @@
 layout: post
 title: What happens when you type a URL into your browser? — The big picture (with Cloud)
 date: 2023-05-31 09:56:00-0400
-description: What happens when you type a URL into your browser? 
+description: 
 tags: cloud networking
 categories: cloud
 giscus_comments: true

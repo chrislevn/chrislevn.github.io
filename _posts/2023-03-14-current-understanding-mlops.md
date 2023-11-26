@@ -1,8 +1,8 @@
 ---
 layout: post
 title: My current understanding of MLOps workflow
-date: 2023-11-21 09:56:00-0400
-description: My current understanding of MLOps workflow
+date: 2023-07-21 09:56:00-0400
+description: 
 tags: mlops
 categories: AI
 giscus_comments: true

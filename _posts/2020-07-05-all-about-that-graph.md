@@ -2,7 +2,7 @@
 layout: post
 title: Almost all about that graph (part 1)
 date: 2020-05-07 09:56:00-0400
-description: Almost all about that graph (part 1)
+description: 
 tags: algorithm
 categories: tech
 giscus_comments: true
