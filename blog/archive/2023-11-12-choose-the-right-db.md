@@ -14,4 +14,4 @@ related_posts: true
 
 Before we start, let's me say there is no one-size-fits-all database. Each database has its own pros and cons. It's important to understand the trade-offs of each database before choosing one. We won't be covering much about scaling database in this post. Just the initial setup and how to choose the right database for your task.
 
-
+# Story 1: Alex with 
