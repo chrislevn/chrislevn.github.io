@@ -30,10 +30,7 @@ Prefer only GitHub-flavored Markdown in external text.
 See README.md for details.
 -->
 
-# Good practices on writing Dockerfile
-Last updated: Jun 13, 2023
-
-Website: [https://chrislevn.github.io/dockerfile-practices/](https://chrislevn.github.io/dockerfile-practices/)
+Website: [https://christopherle.com/blog/2023/dockerfile-practices/#s2-dockerfiles-practices](https://christopherle.com/blog/2023/dockerfile-practices/#s2-dockerfiles-practices)
 <br/>
 Github: [https://github.com/chrislevn/dockerfile-practices](https://github.com/chrislevn/dockerfile-practices)
 <br/>
