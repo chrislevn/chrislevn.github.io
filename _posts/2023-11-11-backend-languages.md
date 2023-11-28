@@ -40,12 +40,15 @@ Let's look at some of the criteria to considered:
 - Java, C#, and JavaScript (Node.js) support asynchronous programming and are quite capable in handling concurrent processes.
 
 ### Runtime:
-![Image by ByteByteGo](https://i.ytimg.com/vi/hnlz0YYCpBU/maxresdefault.jpg)
+- Python, PHP, JavaScript, and Ruby are interpreted languages with dynamic memory management, often leading to slower runtime performance compared to compiled languages. 
+> Python: source code -> interpreter -> operating system -> hardware. 
+- Rust, Go, Java, and C# have compiled runtimes, offering generally better performance. Java and C# run on virtual machines (JVM and CLR), which offer cross-platform support. 
+> Java: bytecode -> virtual machine -> machine code -> operating system -> hardware.
 
-- Python, PHP, JavaScript, and Ruby are interpreted languages with dynamic memory management, often leading to slower runtime performance compared to compiled languages.
-- Rust, Go, Java, and C# have compiled runtimes, offering generally better performance. Java and C# run on virtual machines (JVM and CLR), which offer cross-platform support.
-- Memory Model:
-Rust has a unique memory model focusing on safety without a garbage collector.
+> C++: machine code -> operating system -> hardware.
+
+### Memory Model:
+- Rust has a unique memory model focusing on safety without a garbage collector.
 - Go, Java, and C# use garbage collection to manage memory, balancing performance and ease of use.
 - Python, PHP, JavaScript, and Ruby have dynamic memory models with managed garbage collection, which simplifies development at the cost of some control and efficiency.
 
