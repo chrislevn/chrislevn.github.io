@@ -6,7 +6,7 @@ description:
 tags: git
 categories: backend
 giscus_comments: true
-featured: true
+featured: false
 related_posts: true
 ---
 

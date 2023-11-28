@@ -36,7 +36,7 @@ I’m best reached via [email](christopherle0711@gmail.com). I’m always open t
 
 ---
 
-## Awards: 
+### Awards: 
 - 2nd Place Developer Week Hackathon 2019.
 - 1st place in AngelHack + AWS Hackathon 2019.
 - 1st Place Midwest Region (MW) of the Consortium for Computing Sciences in Colleges (CCSC).
