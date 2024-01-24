@@ -15,11 +15,11 @@ Hey guys, it
 ## Microcontrollers
 Microcontrollers are small computers that are used to control other devices. They are used in a wide range of applications, including robotics, home automation, and industrial automation. They are also used in a wide range of industries, including automotive, aerospace, and medical. They are great for specific tasks that require a lot of processing power, but they are not good for general purpose computing.
 
-Usually in a microcontroller, there are 3 main components: CPU, memory and I/O ports. 
+Usually in a microcontroller, there are 3 main components: CPU, memory and I/O peripherals. 
 
 - CPU is the brain of the microcontroller. It is responsible for executing instructions and performing calculations.
 - Memory is used to store data and instructions. There are 2 main types of memory: RAM and ROM. RAM is used to store data and instructions temporarily. ROM is used to store data and instructions permanently.
-
+- I/O peripherals -- The input and output devices are the interface for the processor to the outside world. The input ports receive information and send it to the processor in the form of binary data. The processor receives that data and sends the necessary instructions to output devices that execute tasks external to the microcontroller.
 
 
 ## What is Cyobot?
@@ -30,11 +30,20 @@ CYOBot is the companion that guides students through different skill levels and 
 ## CYOCrawler
 ![Cyobot](../assets/img/cyobot/cyocrawler.png)
 
+Let's talk about how to create CYOCrawler from scratch: 
+
+Imagine you are
+
+
+
+
+
 CYO
 
 - ESP32 Wi-Fi & Bluetooth MCU: 
     - a popular WiFi and Bluetooth module based on the ESP32 chip.
 - PCA9685 providing 12-channel servo controller
+    - 
 - LSM6D IMU
 - Onboard speaker with MAX98357
 - Onboard microphone with MAX9814

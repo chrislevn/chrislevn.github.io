@@ -16,7 +16,15 @@ related_posts: true
 
 When it comes to Backend Web Development – we primarily require a backend (or you can say server-side) programming language to make the website function along with various other tools & technologies such as databases, frameworks, web servers, etc.
 
-Pick a language from the given list and make sure to learn its quirks, core details about its runtime e.g. concurrency, memory model, etc.
+Pick a language from the given list and make sure to learn its quirks, core details about its concurrency, memory model, runtime etc.
+
+## Basics of concurrency, memory model, and runtime: 
+
+### Concurrency
+Concurrency refers to the ability of multiple threads to access shared resources simultaneously. Concurrency means happening at (about) the same time. As opposed to happening in parallel, truly.
+
+
+
 
 ## Comparison of backend languages
 
