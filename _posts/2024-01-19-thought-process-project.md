@@ -123,7 +123,7 @@ After this project, I have more confidence to step in bigger code bases. For tho
 - Find a problem or someone who needs a software and help them build it. Get it done is not easy but you will get the foundation of how to build a software, espcially with others and for others.
 - Read and apply. Reading is not enough. You need to apply it to see if it's true. Learning never stops.
 - Be curious. Always ask "why" and "what if".
-- Once you feel comfortable, step out of your comfort zone: find an internship, reasearch project, job, or collaborate on an open-source project. The point is to learn from others and see how they do things.
+- Once you feel comfortable, step out of your comfort zone: find an internship, reasearch project, job, or collaborate on an open-source project. The point is to learn from others and see how they do things. Learn to use Git properly with a large team.
 - Duirng doing these, learn from your mentors and peers. They can be the managers or the people you work with. They can be the people you meet at meetups or online.
 
 > Remember, SWE is not just coding. Sometimes, to solve the problem, you need to talk to people, understand the business, and understand the users. The end goal is to solve the problem as the core of engineering. In the real world with competiton, solving problem will also involve solving it faster and better. 
