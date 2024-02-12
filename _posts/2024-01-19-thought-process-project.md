@@ -104,6 +104,13 @@ Back to optimization with Python, here are the tools I used:
 
 All of this, I made Makefile automation to make it easier for the next person to take over.
 
+### Future development
+- Monitoring: Grafana and Prometheus
+- Server: EC2
+- Database: SQL
+- Upgrade Github Team to have merge check and staging environment. 
+- Use FastAPI for better performance.
+
 ## Finish
 At the time I wrote this post, the project is done or might be tested for the release. The current cost (for all the open-source tools I used) is nearly $0 for +250,000 emails sent/year (more observation will be needed in the future). I followed all the best practices from [Backend roadmap](https://roadmap.sh/backend). Looking back, I can see this is more than just reading as I can see and apply what I learned. I could also see what happens if I didn't do this or that. 
 
