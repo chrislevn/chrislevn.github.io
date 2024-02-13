@@ -127,12 +127,15 @@ Back to optimization with Python, here are the tools I used:
 
 All of this, I made Makefile automation to make it easier for the next person to take over.
 
+> Tech stack in this case is neccessary but not the most important. Understanding the business needs, users flow, foundations of the tech stack, practices to find solutions are what kept me going. But if I have to do more to optimize, I will do this:
+
 ### Future development
 - Monitoring: Grafana and Prometheus
 - Server: EC2
 - Database: SQL
 - Upgrade Github Team to have merge check and staging environment. 
 - Use FastAPI for better performance.
+- Maybe migrate to Rust/Go server for better performance? (question mark since this might mean refractoring the whole code base and the team might not have the experience with it.)
 
 ## Finish
 ![Source: TechnologyAdvice](image-5.png)
