@@ -129,7 +129,7 @@ Back to optimization with Python, here are the tools I used:
 
 All of this, I made Makefile automation to make it easier for the next person to take over.
 
-> Once the product is up and running, the optimization can be started from a very small feature (like making a function faster and consume less memory) to a big feature (like refractoring the whole code base). This deep knowledge is hardly taught in bootcamps but colleges (data structures, hardware, computer systems, etc). Constant learning and experience is needed.
+> Once the product is up and running, the optimization can be started from a very small feature (like making a function faster and consume less memory.) to a big feature (like refractoring the whole code base). This deep knowledge is hardly taught in bootcamps but colleges (data structures, hardware, computer systems, etc). Constant learning and experience is needed.
 
 > Tech stack in this case is neccessary but not the most important. Understanding the business needs, users flow, foundations of the tech stack, practices to find solutions are what kept me going. But if I have to do more to optimize, I will do this:
 
@@ -139,7 +139,9 @@ All of this, I made Makefile automation to make it easier for the next person to
 - Database: SQL
 - Upgrade Github Team to have merge check and staging environment. 
 - Use FastAPI for better performance.
-- Maybe migrate to Rust/Go server for better performance? (question mark since this might mean refractoring the whole code base and the team might not have the experience with it.)
+- Maybe migrate to Rust/Go server for better performance? (question mark since this might mean refractoring the whole code base and the team might not have the experience with it.) 
+
+> Something I learned: Rust is faster than Go as it doesn't need a garbe collector. However, Go handles concurrency better due to its goroutines. However, Python is popular for me since it's easy to use and the team is familiar with it (we use MicroPython). Since it is simple, it's easier for people to create libraries and tools, espcially for data scienctists who don't have much experience in backend. So while Rust and Go are faster for server, I see Python is still the best choice for the team.
 
 ## Finish
 ![Source: iStock](https://media.istockphoto.com/id/1392694760/vector/working-project-progress-effort-to-finish-work-or-achieve-business-success-accomplishment.jpg?s=612x612&w=0&k=20&c=HTNI6ZqgVCBs7KVzt6IwiD7APe2ckyxazh9RWYMX7Zc=)
@@ -165,7 +167,7 @@ Current LLM is far from AGI aka human doing nothing. But it's undeniable we got 
 
 That's why I feel the immediate needs to upskill of what I already know and also broaden my skills with AI. The question is at the end, if nobody will hire me, can I build my own product? What skills do I need? What people do I need to get in my team? Or if say opening a company is too hard, can I freelance and build products for others? What tech and non-tech skills do I need? Experience is so important in this case.
 
-> Note: I have always wanted to create my own product but 4 years ago before college, the first software I made when I learned programming was so basics that it couldn't be used for anything. College was a great time to learn the basics but it wasn't enough when it comes to scaling. Then, it took me multiple internships to figure out about scaling and optimization. But sometimes, companies already have their own big code base and your job is to maintain or optimize a small part of it. Throughout this process, I found that the best way to learn is to apply what I learned from books and industry to build my own product. Keep learning and improving to see what works and what doesn't.
+> Note: I have always wanted to create my own product but 4 years ago before college, the first software I made when I learned programming was so basics that it couldn't be used for anything. College was a great time to learn the basics but it wasn't enough when it comes to scaling. Then, it took me multiple internships to figure out about scaling and optimization. But sometimes, companies already have their own big code base and your job is to maintain or optimize a small part of it. It is essential to see a big picture/architecture. Throughout this process, I found that the best way to learn is to apply what I learned from books and industry to build my own product. Keep learning and improving to see what works and what doesn't.
 
 When I had less real-life experience, my tech stack came from big names like Google (Firebase, GCP, etc) and AWS. They all have free tier to encourage people to use their products. I made poor code and optimization because everything was free. But when I had more experience, I learned more about the pros and cons of each product. For example, can Firebase, which was free and easy to use, handle the load of a big company? Can AWS, which was more complex and costly, be used for a small company?
 
