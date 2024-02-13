@@ -16,7 +16,7 @@ FYI, I haven't done any real production backend yet nor I had a chance to. But I
 
 > Software engineer is a constant progress of problem solving. 
 
-![Source: Pixentia Insights](image.png)
+![Source: Pixentia Insights](https://cdn2.hubspot.net/hubfs/1751195/blg-img.jpg)
 
 There is no such thing as built once and done. There will be maintaince, bug fixing, new features or optimization. I learned this from an older friend who is a tech lead for 5+ years. That said, to have the most real experience, finding someone who need their software to be built and help them build it is the best way to learn. Alternatively, I also thought of building my own personal project but it has to be released to the public and maintained for a while.
 
@@ -26,7 +26,7 @@ Luckily, after I found one, the first thing I researched was what was the busine
 The current boxes were: something cheap or even free until we have more profits, something that can be built fast, and something that can be scaled and customized. Then, I aligned this with what I already knew. 
 
 ### Tech stacks
-![Source: Novateus](image-1.png)
+![Source: Novateus](https://novateus.com/blog/wp-content/uploads/2022/03/yvcl5it66j0uni2xz8tc.png)
 
 Starting point: I have experience in Full-stack, DevOps, and Machine Learning. However, unlike DevOps, most of Full-stack and Machine Learning products I built was stopped at the prototype stage. I want to learn the best practices and how to build a real product that fit business needs.
 
@@ -69,7 +69,7 @@ Let's get started.
 That's all the simple needs for the backend. We will talk more about the customizations and scaling later.
 
 ## Development
-![Source: Medium](image-2.png)
+![Source: Synotive](https://miro.medium.com/v2/resize:fit:1358/0*qZ1JOnVpPokvnr69.jpg)
 1. The first thing I would do is to confirm the architecture, tech stack, and database schema with the tech lead/CTO/tech manager. Then, estimate the deadline for each features and also collaborate with non-tech managers to align the deadline with the business needs. This whole process will take around 1-2 weeks. Think of it from user perpective on how they would use this product. Raise the questions "what if?" to cover test cases. 
 
 > Remember that not all businesses will need a lot of technology. Be flexible and aim for solving the problems. 
@@ -89,7 +89,7 @@ An example can be from how you create user id to will read or write will be more
 > The flow above looks simple but what took me longest was making sure all the edge cases was covered and the product is easy to use to fit the business needs. That comes to optimization. 
 
 ## Optimization
-![Source: LinkedIn](image-3.png)
+![Source: Baeldung](https://www.baeldung.com/wp-content/uploads/sites/4/2022/08/levels4-e1661327598293.png)
 SWE is not a deployed and done. It's a constant progress. I found that the most important thing is to make sure the product is easy to use and fast. An example can be if the user has to wait 5s for the server to respond, they will leave. 
 
 I found this server slowness comes from a few reasons. And also there are some questions I asked myself to improve the product: 
@@ -127,6 +127,8 @@ Back to optimization with Python, here are the tools I used:
 
 All of this, I made Makefile automation to make it easier for the next person to take over.
 
+> Once the product is up and running, the optimization can be started from a very small feature (like making a function faster and consume less memory) to a big feature (like refractoring the whole code base). This deep knowledge is hardly taught in bootcamps but colleges (data structures, hardware, computer systems, etc). Constant learning and experience is needed.
+
 > Tech stack in this case is neccessary but not the most important. Understanding the business needs, users flow, foundations of the tech stack, practices to find solutions are what kept me going. But if I have to do more to optimize, I will do this:
 
 ### Future development
@@ -138,7 +140,7 @@ All of this, I made Makefile automation to make it easier for the next person to
 - Maybe migrate to Rust/Go server for better performance? (question mark since this might mean refractoring the whole code base and the team might not have the experience with it.)
 
 ## Finish
-![Source: TechnologyAdvice](image-5.png)
+![Source: iStock](https://media.istockphoto.com/id/1392694760/vector/working-project-progress-effort-to-finish-work-or-achieve-business-success-accomplishment.jpg?s=612x612&w=0&k=20&c=HTNI6ZqgVCBs7KVzt6IwiD7APe2ckyxazh9RWYMX7Zc=)
 At the time I wrote this post, the project is done or might be tested for the release. The current cost (for all the open-source tools I used) is nearly $0 for +250,000 emails sent/year (more observation will be needed in the future). I followed all the best practices from [Backend roadmap](https://roadmap.sh/backend). Looking back, I can see this is more than just reading as I can see and apply what I learned. I could also see what happens if I didn't do this or that. 
 
 Things can be from how to build this product to what is the pros and cons of each tech stack, even at the language level. I got to test the performance of Python and Go, Rust server because I was genuinely curious. 
@@ -156,7 +158,7 @@ After this project, I have more confidence to step in bigger code bases. For tho
 > Remember, SWE is not just coding. Sometimes, to solve the problem, you need to talk to people, understand the business, and understand the users. The end goal is to solve the problem as the core of engineering. In the real world with competiton, solving problem will also involve solving it faster and better. 
 
 ## My take on AI and my learning
-![Source: Protocol](image-4.png)
+![Source: Scalable Path](https://cdn-blog.scalablepath.com/uploads/2022/09/github-copilot-pair-programmer-copy.png)
 Current LLM is far from AGI aka human doing nothing. But it's undeniable we got more done with less resouces (one senior developer with AI compare with the cost of 1 senior, 2 junior developers). Since training AI will also be costly, cutting costs and laying off is inevitable. Of course, there will be jobs for AI but it will take time for the market to adjust and more barriers to entry (Masters and PhD to get a role in AI on average). But AI is a must for the future. Looking back on human development, technlogy will advance and we will have to adapt.
 
 That's why I feel the immediate needs to upskill of what I already know and also broaden my skills with AI. The question is at the end, if nobody will hire me, can I build my own product? What skills do I need? What people do I need to get in my team? Or if say opening a company is too hard, can I freelance and build products for others? What tech and non-tech skills do I need? Experience is so important in this case. 
@@ -168,7 +170,7 @@ When I had less real-life experience, my tech stack came from big names like Goo
 I also learned about the importance of the community. An example is if you have a problem, you can ask the community. Not everything can be answered from StackOverflow, Medium, or AI (ChatGPT). You might have to contact the person who wrote the code and ask them or anyone related. Communication is not hidden for SWEs. 
 
 ## Conclusion
-I hope this post is helpful for those who are learning and those who are curious about how to build a backend. Stay tuned! I will write more about my learning in the next posts. 
+I hope this post is helpful for those who are learning and those who are curious about how to build a backend. Stay tuned! I'm starting on a new cool project. I will write more about my learning in the next posts. 
 
 If you want to collaborate or hire me to solve your problems, please contact me at [locvicvn1234@gmail.com](mailto:locvicvn1234@gmail.com). I'm also open to any feedback and questions.
 
