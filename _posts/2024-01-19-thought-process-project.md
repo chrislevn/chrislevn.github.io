@@ -171,7 +171,7 @@ That's why I feel the immediate needs to upskill of what I already know and also
 
 When I had less real-life experience, my tech stack came from big names like Google (Firebase, GCP, etc) and AWS. They all have free tier to encourage people to use their products. I made poor code and optimization because everything was free. But when I had more experience, I learned more about the pros and cons of each product. For example, can Firebase, which was free and easy to use, handle the load of a big company? Can AWS, which was more complex and costly, be used for a small company?
 
-> Note: I found that in a company. CEO is often more optimist and CTO is often more pessimist. Optimism from the CEO helps sales, and calls for more investment. Pessimism from the CTO helps determine the cost and deployment of the tech stacks. Both are important and reliable on each other. 
+> Note: I found that in a company. CEO is often more optimist and CTO is often more pessimist. Optimism from the CEO helps sales, and calls for more investment. Pessimism from the CTO helps determine the cost and deployment of the tech stacks. Both are important and reliable on each other (and then there are project managers who talk in both languages and keep deadlines in check). 
 
 I also learned about the importance of the community. An example is if you have a problem, you can ask the community. Not everything can be answered from StackOverflow, Medium, or AI (ChatGPT). You might have to contact the person who wrote the code and ask them or anyone related. Communication is not hidden for SWEs. 
 
