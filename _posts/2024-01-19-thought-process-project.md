@@ -112,6 +112,8 @@ I found this server slowness comes from a few reasons. And also there are some q
 
 > It might sound a lot but it do get better and you will learn a lot from it. I found the term **10x engineer** is also related to this? In a meeting with non-tech people, the **10x engineer** already tested their software throughly, can answer questions, and add features that might be useful later. That way, they finish the project faster and can move to the next project.
 
+> Don't forget to prioritize the optimization. My approach was always keep 3 most important things on my current todos. In this case, I purposely overengineered the product to learn more about the best practices. Things like optimize the performance, security, and automation will be useful in the future. However, I also made it easy for the next person to take over with documentation, automation, and tracing appraoches.
+
 Back to optimization with Python, here are the tools I used: 
 - Testing: Pytest 
 - Profiling: cProfile with SnakeViz
