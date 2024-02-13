@@ -92,7 +92,7 @@ An example can be from how you create user id to will read or write will be more
 ![Source: LinkedIn](image-3.png)
 SWE is not a deployed and done. It's a constant progress. I found that the most important thing is to make sure the product is easy to use and fast. An example can be if the user has to wait 5s for the server to respond, they will leave. 
 
-I found this server slowness comes from a few reasons: 
+I found this server slowness comes from a few reasons. And also there are some questions I asked myself to improve the product: 
 - Server sleeps. Is there any way we can prevent this?
 - Lookup time is slow. Can we cache the data? or improve the algorithm?
 > An example is if we want to find the customer with most orders and there are a lot of finding and customers adding, we can use a heap?
