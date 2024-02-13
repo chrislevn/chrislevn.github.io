@@ -145,7 +145,11 @@ All of this, I made Makefile automation to make it easier for the next person to
 
 ## Finish
 ![Source: iStock](https://media.istockphoto.com/id/1392694760/vector/working-project-progress-effort-to-finish-work-or-achieve-business-success-accomplishment.jpg?s=612x612&w=0&k=20&c=HTNI6ZqgVCBs7KVzt6IwiD7APe2ckyxazh9RWYMX7Zc=)
-At the time I wrote this post, the project is done or might be tested for the release. The current cost (for all the open-source tools I used) is nearly $0 for +250,000 emails sent/year (more observation will be needed in the future). I followed all the best practices from [Backend roadmap](https://roadmap.sh/backend). Looking back, I can see this is more than just reading as I can see and apply what I learned. I could also see what happens if I didn't do this or that. 
+At the time I wrote this post, the project is done or might be tested for the release. The current cost (for all the open-source tools I used) is nearly $0 for +250,000 emails sent/year (more observation will be needed in the future). 
+
+Before optimization, the failure rate is 30% due to server sleep and slow lookup time. After optimization, the failure rate is 2%. The server is also faster and more stable and have automation to handle all the requests flow and errors.
+
+I followed all the best practices from [Backend roadmap](https://roadmap.sh/backend). Looking back, I can see this is more than just reading as I can see and apply what I learned. I could also see what happens if I didn't do this or that. 
 
 Things can be from how to build this product to what is the pros and cons of each tech stack, even at the language level. I got to test the performance of Python and Go, Rust server because I was genuinely curious. 
 
