@@ -39,28 +39,28 @@ Learning resources I used:
 - Python for DevOps book.
 - High Performance Python book.
 - Robust Python book for clean and maintainable code. 
-- Mutiple documentations.
+- Multiple documentations.
 
 Let's get started.
 
-- I'm strongest in Python since I also do data engineering, which made development time faster. I do understand Go, JavaScript is better backend choice but there will make the development time longer.
+- I'm strongest in Python since I also do data engineering, which made development time faster. I do understand Go, JavaScript is a better backend choice but there will make the development time longer.
 
-    => I chose **Python**. For framework, I chose **Flask** due to its simplicity and support for both front-end and back-end. Will update to FastAPI later for better performance. At the moment, great performance is not the priority since user base is small. I find sometimes I have to link Python with JavaScript since the company also has a front-end team. Learning JavaScript is useful for this case.
+    => I chose **Python**. For the framework, I chose **Flask** due to its simplicity and support for both front-end and back-end. I will update to FastAPI later for better performance. At the moment, great performance is not the priority since the user base is small. I find sometimes I have to link Python with JavaScript since the company also has a front-end team. Learning JavaScript is useful for this case.
 
-- I have experience in full-stack and devops. The next things was finding what fits the budget. Use "back-of-the-envelope" calculation to estimate the cost, server need: 
+- I have experience in full-stack and DevOps. The next thing was finding what fits the budget. Use "back-of-the-envelope" calculation to estimate the cost, server need: 
 
     - SQL or NoSQL: 
-    I found SQL is better and faster for query and data manipulation. But currently, the data is small and NoSQL databases out there aren't free. For SQL, I found AWS DynamoDB offer the most for free tier (25GB). After a while, I found it's quite stable and fast. They also have CloudWatch to monitor database performance but please turn them off if you don't need it to save cost. Once we have more profits, we can move to SQL.
+    I found SQL is better and faster for query and data manipulation. But currently, the data is small and NoSQL databases out there aren't free. For SQL, I found AWS DynamoDB offers the most for the free tier (25GB). After a while, I found it's quite stable and fast. They also have CloudWatch to monitor database performance but please turn them off if you don't need it to save cost. Once we have more profits, we can move to SQL.
     => Choice: NoSQL with AWS DynamoDB. 
 
     - Hosting: 
-    I currently use **Render** free tier since they have very easy deployment with Flask. However, their free tier server will sleep unexpectedly after some inactivity. However, EC2 is the best choice with 12 months free tier and it is stable. CI/CD deployment with EC2 however is not easy. They requires a bunch of configurations and fixing bugs (devops) will be a pain for those who are not familiar with it once I left this project to someone else. 
-    => Choice: **Render** for now. The goal is to move to EC2 once working MVP is done. 
+    I currently use **Render** free tier since they have very easy deployment with Flask. However, their free tier server will sleep unexpectedly after some inactivity. However, EC2 is the best choice with 12 months free tier and it is stable. CI/CD deployment with EC2, however, is not easy. They require a bunch of configurations and fixing bugs (DevOps) will be a pain for those who are not familiar with it once I left this project to someone else. 
+    => Choice: **Render** for now. The goal is to move to EC2 once the working MVP is done. 
 
-    > For server, profiling and load testing your software will help determine how much RAM you will need. For CPU, the more CPU will help with the better performance. 
+    > For the server, profiling and load testing your software will help determine how much RAM you will need. For CPU, the more CPU will help with better performance. 
 
     - Email service: 
-    I found **AWS SES** is the best for free tier for my need. It's stable and fast. They also offer customization HTML. The email verification email, however, needs production access from AWS, which requires some communication with the company.
+    I found **AWS SES** is the best for the free tier for my need. It's stable and fast. They also offer customization HTML. The email verification email, however, needs production access from AWS, which requires some communication with the company.
 
     - CI/CD: 
     I found **GitHub Actions** is the best for this case since the company is small and the deployment is simple. Its free tier is also enough for this case.
@@ -70,37 +70,37 @@ That's all the simple needs for the backend. We will talk more about the customi
 
 ## Development
 ![Source: Synotive](https://miro.medium.com/v2/resize:fit:1358/0*qZ1JOnVpPokvnr69.jpg)
-1. The first thing I would do is to confirm the architecture, tech stack, and database schema with the tech lead/CTO/tech manager. Then, estimate the deadline for each features and also collaborate with non-tech managers to align the deadline with the business needs. This whole process will take around 1-2 weeks. Think of it from user perpective on how they would use this product. Raise the questions "what if?" to cover test cases. 
+1. The first thing I would do is to confirm the architecture, tech stack, and database schema with the tech lead/CTO/tech manager. Then, estimate the deadline for each feature and also collaborate with non-tech managers to align the deadline with the business needs. This whole process will take around 1-2 weeks. Think of it from the user's perspective on how they would use this product. Raise the questions "what if?" to cover test cases. 
 
 > Remember that not all businesses will need a lot of technology. Be flexible and aim for solving the problems. 
 
-An example can be from how you create user id to will read or write will be more frequent? What kinds of data type and data structure will be used? What kind of database will need TTL (time to live)? Do we need to use cache? (my case yes, it was a lot faster).     
+An example can be from how you create a user id to will read or write will be more frequent? What kinds of data type and data structure will be used? What kind of database will need TTL (time to live)? Do we need to use cache? (my case yes, it was a lot faster).     
 
-2.  Then, I follow the deadlines to build small features. Anything big can be achieved by breaking it down to smaller tasks. I used Github Issues and Projects to manage the tasks. 
+2.  Then, I follow the deadlines to build small features. Anything big can be achieved by breaking it down into smaller tasks. I used Github Issues and Projects to manage the tasks. 
 
 - I tested interacting with databases, sending emails on local, etc. 
 - Then, I figured to deploy the server. 
 - Then, I configured the Github Actions and API to manage the flows. 
-- Once I tested the product myself fully, I asked tech people in the team to first test it to see errors I couldn't see myself. 
-- Once all is satisfied, I tested with non-tech people to see if the product is easy to use for first time users.
+- Once I tested the product myself fully, I asked tech people on the team to first test it to see errors I couldn't see myself. 
+- Once all is satisfied, I tested with non-tech people to see if the product is easy to use for first-time users.
 
 > I found Copilot is super helpful to make deployment and testing faster. However, supervision is needed since it can make mistakes. 
 
-> The flow above looks simple but what took me longest was making sure all the edge cases was covered and the product is easy to use to fit the business needs. That comes to optimization. 
+> The flow above looks simple but what took me longest was making sure all the edge cases were covered and the product is easy to use to fit the business needs. That comes to optimization. 
 
 ## Optimization
 ![Source: Baeldung](https://www.baeldung.com/wp-content/uploads/sites/4/2022/08/levels4-e1661327598293.png)
-SWE is not a deployed and done. It's a constant progress. I found that the most important thing is to make sure the product is easy to use and fast. An example can be if the user has to wait 5s for the server to respond, they will leave. 
+SWE is not deployed and done. It's a constant progress. I found that the most important thing is to make sure the product is easy to use and fast. An example can be if the user has to wait 5s for the server to respond, they will leave. 
 
-I found this server slowness comes from a few reasons. And also there are some questions I asked myself to improve the product: 
+I found this server slowness comes from a few reasons. And also, there are some questions I asked myself to improve the product: 
 - Server sleeps. Is there any way we can prevent this?
 - Lookup time is slow. Can we cache the data? or improve the algorithm?
-> An example is if we want to find the customer with most orders and there are a lot of finding and customers adding, we can use a heap?
+> An example is if we want to find the customer with the most orders and there are a lot of finding and customers adding, we can use a heap?
 
-- Server has "503 error" when deploying. Can we stage the deployment with dev, staging, and production with different servers? If we have test server, do we have authentication so only the team can access it?
+- Server has "503 error" when deploying. Can we stage the deployment with dev, staging, and production with different servers? If we have a test server, do we have authentication so only the team can access it?
 - How can we prevent this from happening again? Do we have monitoring tools? Did we do profiling and performance testing?
 - For scaling, what are our SLOs (service level objectives)? What are our SLAs (service level agreements)? What are our KPIs (key performance indicators)? How do we measure them? and how do we improve them?
-- Testing will other people always have bugs. Did we have a good testing practices before deploying?
+- Testing will other people always have bugs. Did we have good testing practices before deploying?
 - Did we have A/B testing? Did we have a way to rollback if the new feature is not working?
 - Did we have a way to alert the team if the server is down? or if the automation is not working?
 - Did we handle null, repeated sent emails, or other edge cases?
@@ -110,14 +110,14 @@ I found this server slowness comes from a few reasons. And also there are some q
 - Is our API secure? Did we use JWT? Did we use HTTPS? Did we use CORS?
 - Did we make automation and documentation for the next person who will take over the project?
 
-> It might sound a lot but it do get better and you will learn a lot from it. I found the term **10x engineer** is also related to this? In a meeting with non-tech people, the **10x engineer** already tested their software throughly, can answer questions, and add features that might be useful later. That way, they finish the project faster and can move to the next project.
+> It might sound a lot but it does get better, and you will learn a lot from it. I found the term **10x engineer** is also related to this? In a meeting with non-tech people, the **10x engineer** already tested their software thoroughly, can answer questions, and add features that might be useful later. That way, they finish the project faster and can move to the next project.
 
-> Don't forget to prioritize the optimization. My approach was always keep 3 most important things on my current todos. In this case, I purposely overengineered the product to learn more about the best practices. Things like optimize the performance, security, and automation will be useful in the future. However, I also made it easy for the next person to take over with documentation, automation, and tracing appraoches.
+> Don't forget to prioritize the optimization. My approach was always to keep the 3 most important things on my current todos. In this case, I purposely overengineered the product to learn more about the best practices. Things like optimizing the performance, security, and automation will be useful in the future. However, I also made it easy for the next person to take over with documentation, automation, and tracing approaches.
 
 Back to optimization with Python, here are the tools I used: 
 - Testing: Pytest 
 - Profiling: cProfile with SnakeViz
-- Monitoring: Sentry or Flask_monitoringdashboard (FMD is quite buggy and not recommended for production). Grafana and Prometheus are also good but they require a lot of configurations, espcially DevOps, will be used in the future.
+- Monitoring: Sentry or Flask_monitoringdashboard (FMD is quite buggy and not recommended for production). Grafana and Prometheus are also good, but they require a lot of configurations, especially DevOps, will be used in the future.
 - Load testing: Locust
 - Tracing: Sentry 
 - Automation: GitHub Actions
@@ -129,9 +129,9 @@ Back to optimization with Python, here are the tools I used:
 
 All of this, I made Makefile automation to make it easier for the next person to take over.
 
-> Once the product is up and running, the optimization can be started from a very small feature (like making a function faster and consume less memory.) to a big feature (like refractoring the whole code base). This deep knowledge is hardly taught in bootcamps but colleges (data structures, hardware, computer systems, etc). Constant learning and experience is needed.
+> Once the product is up and running, the optimization can be started from a very small feature (like making a function faster and consume less memory) to a big feature (like refactoring the whole code base). This deep knowledge is hardly taught in boot camps but colleges (data structures, hardware, computer systems, etc). Constant learning and experience is needed.
 
-> Tech stack in this case is neccessary but not the most important. Understanding the business needs, users flow, foundations of the tech stack, practices to find solutions are what kept me going. But if I have to do more to optimize, I will do this:
+> The tech stack in this case is necessary but not the most important. Understanding the business needs, user flow, foundations of the tech stack, practices to find solutions are what kept me going. But if I have to do more to optimize, I will do this:
 
 ### Future development
 - Monitoring: Grafana and Prometheus
@@ -139,7 +139,7 @@ All of this, I made Makefile automation to make it easier for the next person to
 - Database: SQL
 - Upgrade Github Team to have merge check and staging environment. 
 - Use FastAPI for better performance.
-- Maybe migrate to Rust/Go server for better performance? (question mark since this might mean refractoring the whole code base and the team might not have the experience with it.) 
+- Maybe migrate to Rust/Go server for better performance? (question mark since this might mean refactoring the whole code base and the team might not have the experience with it.) 
 
 > Something I learned: Rust is faster than Go as it doesn't need a garbe collector. However, Go handles concurrency better due to its goroutines. However, Python is popular for me since it's easy to use and the team is familiar with it (we use MicroPython). Since it is simple, it's easier for people to create libraries and tools, espcially for data scienctists who don't have much experience in backend. So while Rust and Go are faster for server, I see Python is still the best choice for the team.
 
