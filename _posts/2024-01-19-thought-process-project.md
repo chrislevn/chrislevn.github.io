@@ -170,6 +170,6 @@ I also learned about the importance of the community. An example is if you have 
 ## Conclusion
 I hope this post is helpful for those who are learning and those who are curious about how to build a backend. Stay tuned! I will write more about my learning in the next posts. 
 
-If you want to collaborate or hire me to solve your problems, please contact me at [email](mailto:locvicvn1234@gmail.com). I'm also open to any feedback and questions.
+If you want to collaborate or hire me to solve your problems, please contact me at [locvicvn1234@gmail.com](mailto:locvicvn1234@gmail.com). I'm also open to any feedback and questions.
 
 
