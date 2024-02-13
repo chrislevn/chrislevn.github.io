@@ -56,6 +56,7 @@ Let's get started.
     - Hosting: 
     I currently use **Render** free tier since they have very easy deployment with Flask. However, their free tier server will sleep unexpectedly after some inactivity. However, EC2 is the best choice with 12 months free tier and it is stable. CI/CD deployment with EC2, however, is not easy. They require a bunch of configurations and fixing bugs (DevOps) will be a pain for those who are not familiar with it once I left this project to someone else. 
     => Choice: **Render** for now. The goal is to move to EC2 once the working MVP is done. 
+    > Although there are serverless options, however, once the free tier is over, the cost will be high as there are many unexpected requests to scale up to maintain crash-free server. As a startup, it's better to have the control of the server and the cost.
 
     > For the server, profiling and load testing your software will help determine how much RAM you will need. For CPU, the more CPU will help with better performance. 
 
