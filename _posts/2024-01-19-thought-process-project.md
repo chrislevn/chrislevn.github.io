@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My thought process building end-to-end low-cost backend
+title: My thought process of building end-to-end low-cost backend
 date: 2024-02-12 19:35:00-0400
 description: 
 tags: languages python algorithms backend
