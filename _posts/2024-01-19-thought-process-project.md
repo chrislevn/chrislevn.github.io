@@ -102,7 +102,7 @@ I found this server slowness comes from a few reasons. And also, there are some 
 - Server has "503 error" when deploying. Can we stage the deployment with dev, staging, and production with different servers? If we have a test server, do we have authentication so only the team can access it?
 - How can we prevent this from happening again? Do we have monitoring tools? Did we do profiling and performance testing?
 - For scaling, what are our SLOs (service level objectives)? What are our SLAs (service level agreements)? What are our KPIs (key performance indicators)? How do we measure them? and how do we improve them?
-- Testing will other people always have bugs. Did we have good testing practices before deploying?
+- Will other people always have bugs. Did we have good testing practices before deploying?
 - Did we have A/B testing? Did we have a way to rollback if the new feature is not working?
 - Did we have a way to alert the team if the server is down? or if the automation is not working?
 - Did we handle null, repeated sent emails, or other edge cases?
@@ -142,6 +142,14 @@ All of this, I made Makefile automation to make it easier for the next person to
 - Upgrade Github Team to have merge check and staging environment. 
 - Use FastAPI for better performance.
 - Maybe migrate to Rust/Go server for better performance? (question mark since this might mean refactoring the whole code base and the team might not have the experience with it.) 
+
+#### Tools I want to learn but not applicable for this project
+- DevOps (Kubernetes, Terraform, etc): Kubernetes is good for scaling and managing multiple docker containers. However, it's not necessary for this project's scale. 
+- RabbitMQ or Kafka: For message queue. This is good for a big company with a lot of requests.
+- Redis: For cache. Currently I use LRU cache from Python. Redis is good for a big company with a lot of requests. Besides, Redis needs to be managed and monitored. It's not free. 
+- GraphQL: For better performance and customization. However, it's not necessary for this project's scale. Currently, I'm using REST API.
+
+    => Will use these tools for the next project.
 
 > Something I learned: Rust is faster than Go as it doesn't need a garbe collector. However, Go handles concurrency better due to its goroutines. However, Python is popular for me since it's easy to use and the team is familiar with it (we use MicroPython). Since it is simple, it's easier for people to create libraries and tools, espcially for data scienctists who don't have much experience in backend. So while Rust and Go are faster for server, I see Python is still the best choice for the team.
 
