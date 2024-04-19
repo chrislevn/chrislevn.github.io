@@ -262,7 +262,7 @@ Something more to read on indexing 1M vectors [here](https://github.com/facebook
 
 Based on this, let's put top vector databases with their index method. Things might change in the future. I recommend to check the latest information.
 
-![Vector database and their index method](https://thedataquarry.com/posts/vector-db-1/vector-db-indexes.png)
+<img src="https://thedataquarry.com/posts/vector-db-1/vector-db-indexes.png" alt="Vector database and their index method" width="700"/>
 *Vector database and their index method. Source: thedataquarry.com*
 
 **Cost**
