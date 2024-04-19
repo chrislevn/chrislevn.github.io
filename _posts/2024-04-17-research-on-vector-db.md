@@ -1,6 +1,6 @@
 ---
 layout: post
-title: I researched on top vector databases's index and here are what I found
+title: How can backend developers get involved with AI? Let's talk about vector databases.
 date: 2024-04-17 19:35:00-0400
 description: 
 tags: AI vector-database database backend 
