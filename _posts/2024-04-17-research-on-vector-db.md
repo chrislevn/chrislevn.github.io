@@ -44,7 +44,7 @@ When a user make a query (question), the query will go through the embedding mod
 
 In one of the most popular usage of generative AI and vector database is RAG (Retrieval Augmented Generation), vector databses are used to store latest web search results or users' personal data (PDF, files, etc). You can use RAG to find relevant chunks of text from the database and generate the answer based on the query.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*kSkeaXRvRzbJ9SrFZaMoOg.png)
+<img src="https://miro.medium.com/v2/resize:fit:1400/1*kSkeaXRvRzbJ9SrFZaMoOg.png" alt="" width="500"/>
 *Example of RAG. Source: engineering.talkdesk.com*
 
 # Similarity search in vector databases
@@ -53,7 +53,7 @@ Let's talk about the secret sauce of vector databases: the vector index. Unlike 
 
 With NoSQL or SQL, normal database index is a data structure used to improve the speed of data retrieval operations on a database table at the cost of additional space and increased maintenance overhead.
 
-![Vertabelo](https://vertabelo.com/blog/what-is-database-index/3.jpg){:width="50%"}
+<img src="https://vertabelo.com/blog/what-is-database-index/3.jpg" alt="Vertabelo" width="300"/>
 *Example of Database index. Source: Vertabelo*
 
 In vector databases, the index is used to store the vectors and to search for similar items. There are many types of index, but the most common ones are: FLAT, IVF, SQ, PQ, HNSW, Annoy.
@@ -73,8 +73,6 @@ Tldr: Good for small dataset, best for accuracy when search speed is not relevan
 
 Currently supported by: Weaviate, Milvus, FAISS.
 
-// FLAT Implementation from scratch with Python notebook
-
 ### Inverted file index (`IVF`) - slowest but most accurate
 We know that FLAT is most accurate but slow. What is the faster optimization? IVF. 
 
@@ -89,8 +87,6 @@ Other subsets of IVF: IVF_FLAT, IVF_SQ, IVF_PQ (Milvus).
 
 
 Currently supported by: Milvus; pgvector (IVF_FLAT, IVF_PQ), LanceDB (IVF_PQ).
-
-// Implementation from scratch with Python notebook
 
 Tldr: Good scalable option. High-quality, at reasonable speed and memory usage. Good for small to medium dataset.
 
@@ -117,7 +113,7 @@ To put it simply, a skip list is a data structure that allows for fast search wi
 
 Navigable Small World (NSW) models encompass networks with (poly/)logarithmic complexity where greedy routing is utilized. However, the effectiveness of greedy routing diminishes as the network scales up, particularly for larger networks with 1-10K+ vertices, especially when the graph is not navigable [1]. When exploring an NSW graph, we commence from a predetermined entry point which connects to several adjacent vertices. By discerning the closest vertex to our query vector among these connections, we proceed to it. This process iterates through greedy-routing, moving from vertex to vertex by selecting the nearest neighboring vertices within each vertex's friend list. Eventually, we reach a local minimum where no closer vertices exist, serving as our termination point.
 
-![Navigable Small World](https://cdn.sanity.io/images/vr8gru94/production/5ca4fca27b2a9bf89b06748b39b7b6238fd4548c-1920x1080.png)
+<img src="https://cdn.sanity.io/images/vr8gru94/production/5ca4fca27b2a9bf89b06748b39b7b6238fd4548c-1920x1080.png" alt="Navigable Small World" width="500"/>
 *Navigable Small World. Source: pinecone.io*
 
 However, NSW graphs are not always navigable, particularly when the graph is large or the data is high-dimensional. To address this, Hierarchical Navigable Small World (HNSW) graphs were introduced. HNSW graphs are navigable and hierarchical, with each level containing a subset of vertices from the previous level. This hierarchical structure allows for faster search times and improved recall.
@@ -126,7 +122,7 @@ However, NSW graphs are not always navigable, particularly when the graph is lar
 
 HNSW is a graph-based index that uses a multi-level graph to store vectors. For each layer, we go through the same process as NSW until we find the closest vertex. The difference is that we store the vertex in the next layer. This process continues until we find the local minimum of our bottom layer — layer 0.
 
-![HNSW](https://cdn.sanity.io/images/vr8gru94/production/42d4a3ffc43e5dc2758ba8e5d2ef29d4c4d78254-1920x1040.png)
+<img src="https://cdn.sanity.io/images/vr8gru94/production/42d4a3ffc43e5dc2758ba8e5d2ef29d4c4d78254-1920x1040.png" alt="HNSW" width="500"/>
 *HNSW. Source: pinecone.io*
 
 The reason why it is fast is because of ANN (Approximate Nearest Neighbor) search. ANN search is a search algorithm that finds the approximate nearest neighbors of a query vector. It is fast because it focuses on finding approximate nearest neighbors rather than exact matches. However, there is always a trade-off between speed and memory usage. HNSW is fast but uses more memory than IVF due to the complexity of the graph and number of connections of the nodes. 
@@ -144,7 +140,7 @@ Now, we have come to high memory usage problem. One of the reason is the high-di
 
 Product quantization (PQ) is a popular method for dramatically compressing high-dimensional vectors to use less memory. 
 
-![Product quantization](https://cdn.sanity.io/images/vr8gru94/production/ca04d5d84cd168d0c6a9dba146851ebde6612ead-1920x1080.png)
+<img src="https://cdn.sanity.io/images/vr8gru94/production/ca04d5d84cd168d0c6a9dba146851ebde6612ead-1920x1080.png" alt="Product quantization" width="500"/>
 *Product quantization. Source: pinecone.io*
 
 In short, PQ is the process of:
@@ -179,12 +175,15 @@ The quantized dataset typically uses 8-bit unsigned integers, but lower values (
 
 > PQ and SQ are similar in that they both compress vectors to reduce memory usage. However, PQ compresses vectors by dividing them into subvectors and assigning each subvector to a centroid, while SQ compresses vectors by dividing them into bins and converting them to integers. They are different methods to achieve the same goal: reducing memory usage. 
 
+<img src="https://assets.zilliz.com/product_quantization_96dd9283c3.png" alt="Scalar quantization" width="500"/>
+*Scalar quantization. Source: zilliz.com*
+
 ## Other candidates
 ### Approximate Nearest Neighbors Oh Yeah (`Annoy`)
 
 Annoy (Approximate Nearest Neighbors Oh Yeah) is an algorithm based on random projections and trees. It is a tree-based index that uses binary search trees as its core data structure. It partitions the vector space recursively to create a binary tree, where each node is split by a hyperplane equidistant from two randomly selected child vectors. The splitting process continues until leaf nodes have fewer than a predefined number of elements. Querying involves iteratively the tree to determine which side of the hyperplane the query vector falls on.
 
-![](https://i.imgur.com/4UUevet.png)
+<img src="https://i.imgur.com/4UUevet.png" alt="" width="500"/>
 *Annoy idea. Source: sds-aau.github.io*
 
 Annoy is fast because it has the ability to use static files as indexes. In particular, this means you can share index across processes. Annoy also decouples creating indexes from loading them, so you can pass around indexes as files and map them into memory quickly. Another nice thing of Annoy is that it tries to minimize memory footprint so the indexes are quite small. The original idea was to sacrifice some accuracy for speed. 
@@ -274,6 +273,7 @@ However, from my observation, the cost of tools can be lower than the cost of en
 More on supprt and limitation, I recommend to check the more on this blog [here](https://thedataquarry.com/posts/vector-db-1/).
 
 To put it shortly, 
+
 Database | Pros | Cons
 --- | --- | ---
 Pinecone | Very easy to get up and running | Fully proprietary
@@ -303,7 +303,7 @@ This is how I believe backend developers can get involved with AI without changi
 
 Terms to know: embeddings, vector, index, k-means, unsperivised learning, skip list, ANN, greedy search, Vanama.
 
-I also created some implementation of the vector database (no wrapper) with Python. You can check it [here](https://github.com/chrislevn/vector_database_study). 
+**I also created some implementation of the vector database (no wrapper) with Python. You can check it [here](https://github.com/chrislevn/vector_database_study).**
 
 # References: 
 - https://thesequence.substack.com/p/guest-post-choosing-the-right-vector
