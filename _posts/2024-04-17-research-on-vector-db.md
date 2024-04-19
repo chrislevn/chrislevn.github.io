@@ -44,7 +44,8 @@ When a user make a query (question), the query will go through the embedding mod
 
 In one of the most popular usage of generative AI and vector database is RAG (Retrieval Augmented Generation), vector databses are used to store latest web search results or users' personal data (PDF, files, etc). You can use RAG to find relevant chunks of text from the database and generate the answer based on the query.
 
-// Image
+![](https://miro.medium.com/v2/resize:fit:1400/1*kSkeaXRvRzbJ9SrFZaMoOg.png)
+*Example of RAG. Source: engineering.talkdesk.com*
 
 # Similarity search in vector databases
 ## Index 
@@ -52,14 +53,12 @@ Let's talk about the secret sauce of vector databases: the vector index. Unlike 
 
 With NoSQL or SQL, normal database index is a data structure used to improve the speed of data retrieval operations on a database table at the cost of additional space and increased maintenance overhead.
 
-![Vertabelo](https://vertabelo.com/blog/what-is-database-index/3.jpg)
+![Vertabelo](https://vertabelo.com/blog/what-is-database-index/3.jpg){:width="50%"}
 *Example of Database index. Source: Vertabelo*
-
-// Example implementation of simple index with Python notebook
 
 In vector databases, the index is used to store the vectors and to search for similar items. There are many types of index, but the most common ones are: FLAT, IVF, SQ, PQ, HNSW, Annoy.
 
-![LanceDB](https://lancedb.github.io/lancedb/assets/vector-db-basics.png)
+![LanceDB](https://lancedb.github.io/lancedb/assets/vector-db-basics.png){:width="50%"}
 *Example of Vector DB index. Source: LanceDB*
 
 
@@ -303,6 +302,8 @@ There will be a need to upskill of course. Before with normal database, you only
 This is how I believe backend developers can get involved with AI without changing their career path.
 
 Terms to know: embeddings, vector, index, k-means, unsperivised learning, skip list, ANN, greedy search, Vanama.
+
+I also created some implementation of the vector database (no wrapper) with Python. You can check it [here](https://github.com/chrislevn/vector_database_study). 
 
 # References: 
 - https://thesequence.substack.com/p/guest-post-choosing-the-right-vector
